@@ -1,0 +1,221 @@
+/* ===== Общие настройки ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #1e293b;
+  background: #f5f7fb;
+}
+
+h1, h2, h3 {
+  color: #1e1b4b;
+  line-height: 1.25;
+}
+
+a {
+  color: #4f46e5;
+}
+
+/* Ограничиваем ширину содержимого и центрируем его */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== Шапка и навигация ===== */
+.header {
+  background: #1e1b4b;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.nav__link {
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #c7d2fe;
+  text-decoration: none;
+}
+
+/* ===== Первый экран на главной ===== */
+.hero {
+  background: #3730a3;
+  color: #e0e7ff;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 16px;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+
+/* ===== Кнопка ===== */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #f59e0b;
+  color: #1e1b4b;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ===== Секции и карточки ===== */
+.section {
+  padding: 40px 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(30, 27, 75, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* ===== Страница «О проекте» ===== */
+.block {
+  margin-bottom: 32px;
+}
+
+.steps li {
+  margin-bottom: 6px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+/* ===== Страница «Контакты» ===== */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contacts__list {
+  padding: 0;
+  list-style: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+}
+
+.form h2 {
+  margin-top: 0;
+}
+
+.form input,
+.form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+/* ===== Подвал ===== */
+.footer {
+  padding: 16px 0;
+  background: #1e1b4b;
+  color: #c7d2fe;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ===== Адаптивность: на экранах от 768px — в строку ===== */
+@media (min-width: 768px) {
+  .header__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero__inner {
+    flex-direction: row;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+
+  .contacts {
+    flex-direction: row;
+  }
+
+  .contacts__info,
+  .form {
+    flex: 1;
+  }
+}

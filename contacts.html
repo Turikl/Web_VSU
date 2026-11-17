@@ -33,7 +33,7 @@
         </ul>
       </div>
 
-      <form class="form" action="#" method="post">
+      <form class="form" action="#" method="post" novalidate>
         <h2>Обратная связь</h2>
 
         <label for="name">Имя</label>
@@ -46,6 +46,8 @@
         <textarea id="message" name="message" rows="5"></textarea>
 
         <button type="submit" class="button">Отправить</button>
+
+        <p class="form__result" id="result"></p>
       </form>
     </div>
   </main>
@@ -55,5 +57,7 @@
       <p>© 2026 SleepyCloud · Учебный проект, ВГУ ФКН, группа 15</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

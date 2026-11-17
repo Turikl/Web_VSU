@@ -181,6 +181,20 @@ a {
   font: inherit;
 }
 
+/* Сообщение под формой: ошибка или успех */
+.form__result {
+  margin: 10px 0 0;
+  font-weight: bold;
+}
+
+.form__result--error {
+  color: #dc2626;
+}
+
+.form__result--success {
+  color: #16a34a;
+}
+
 /* ===== Подвал ===== */
 .footer {
   padding: 16px 0;
